@@ -1,0 +1,351 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{url}
+\usepackage{array}
+\usepackage{tikz} %for red rectangle box
+\usepackage{balance}
+
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\addtolength{\topmargin}{+0.1cm}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+    
+\begin{document}
+
+\title{Building a Natural Language Data Query System for Utilities Companies\\
+\thanks{We acknowledge the support of the Natural Sciences and Engineering Research Council of Canada (NSERC), Harris SmartWorks Division of Harris Computers, Okanagan College, and Langara College.}
+}
+
+\makeatletter
+\newcommand{\linebreakand}{%
+ \end{@IEEEauthorhalign}
+ \hfill\mbox{}\par
+ \mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+\author{
+\IEEEauthorblockN{Albert Wong}
+\IEEEauthorblockA{\textit{Mathematics and Statistics} \\
+\textit{Langara College}\\
+Vancouver, Canada \\
+0000-0002-0669-4352}
+\and
+\IEEEauthorblockN{Lien Pham}
+\IEEEauthorblockA{\textit{Mathematics and Statistics} \\
+\textit{Langara College}\\
+Vancouver, Canada \\
+0000-xxxx-0669-4352}
+\and
+\IEEEauthorblockN{Young Lee}
+\IEEEauthorblockA{\textit{Mathematics and Statistics} \\
+\textit{Okanagan College}\\
+Kelowna, Canada \\
+0000-xxxx-3094-0015}
+
+\linebreakand % <------------- \and with a line-break
+
+\and
+\IEEEauthorblockN{Shek Chan}
+\IEEEauthorblockA{\textit{Mathematics and Statistics} \\
+\textit{Langara College}\\
+Vancouver, Canada \\
+0000-0002-5932-5390}
+
+\and
+\IEEEauthorblockN{Razel Sadaya}
+\IEEEauthorblockA{\textit{Mathematics and Statistics} \\
+\textit{Langara College}\\
+Vancouver, Canada \\
+0000-xxxxx-3094-0015}
+
+\and
+\IEEEauthorblockN{Florence Wing Yau Cheng}
+\IEEEauthorblockA{\textit{Mathematics and Statistics} \\
+\textit{Langara College}\\
+Vancouver, Canada \\
+0000-xxxxx-3094-0015}
+
+\linebreakand % <------------- \and with a line-break
+
+\and
+\IEEEauthorblockN{Mathias Clement}
+\IEEEauthorblockA{\textit{Computer Science} \\
+\textit{Okanagan College}\\
+Kelowna, Canada \\
+0000-xxxxx-3094-0015}
+
+\and
+\IEEEauthorblockN{Youry Khmelevsky}
+\IEEEauthorblockA{\textit{Computer Science} \\
+\textit{Okanagan College}\\
+Kelowna, Canada \\
+0000-0002-6837-3490}
+
+\and
+\IEEEauthorblockN{Joe Mahony}
+\IEEEauthorblockA{\textit{Research and Development} \\
+\textit{Harris SmartWorks}\\
+Ottawa, Canada \\
+JMahony@harriscomputer.com}
+
+\linebreakand % <------------- \and with a line-break
+
+\and
+\IEEEauthorblockN{Michael Ferri}
+\IEEEauthorblockA{\textit{Research and Development} \\
+\textit{Harris SmartWorks}\\
+Ottawa, Canada \\
+mferri@harriscomputer.com}
+
+\and
+\IEEEauthorblockN{Nassi Ebadifard }
+\IEEEauthorblockA{\textit{Computer Science} \\
+\textit{Okanagan College}\\
+Kelowna, Canada \\
+}
+}
+
+\maketitle
+
+\begin{abstract}
+
+xxxxxxxxxxxxxxxxxxxxxxxx
+
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+Natural Language Processing, Data Query System, Text-to-SQL, Speech-to-SQL, Deep Learning, Machine Learning, Human-Machine-Systems, Data Warehouse, T5
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+To be put together by Albert at the end.
+
+The increasing volume of data collected nowadays has driven the interest in finding solutions that provide effective and simplified data retrieval  \cite{Wong2021ASystems}. Hence, recent advances in the use of deep learning for natural language processing have gained a lot of attention and its application to text-to-SQL tasks to be able to develop a system that interfaces between natural language and database systems such as OLTP and data warehouses (DW).
+
+This paper is focused on applying the 
+
+\section{Literature Review}
+
+the data warehouse concept has been around since the turn of the century.
+
+\subsection{Data Warehouse Development}
+
+\setlength{\fboxrule}{2pt}
+    	\fcolorbox{red}{white}{
+        	\parbox{0.8\linewidth}{
+       This section should be written by Nassi
+        	}
+        }
+Data warehouse development is a critical process in modern business intelligence and analytics. It involves the consolidation and integration of data from various sources to create a centralized repository optimized for reporting, analysis, and decision-making.
+
+Key aspects of data warehouse development include:
+
+\subsection{Data Modeling} Data modeling focuses on designing the structure of the data warehouse, including the selection of appropriate schemas such as star schemas or snowflake schemas. Effective data modeling ensures efficient querying and analysis, allowing users to extract meaningful insights from the data.
+
+\subsection{ETL Processes} Extract, Transform, Load (ETL) processes are responsible for extracting data from source systems, transforming it to fit the data warehouse schema, and loading it into the data warehouse. ETL processes require careful consideration to ensure data accuracy, integrity, and consistency.
+
+\subsection{Data Integration} Data integration involves combining data from multiple sources into a unified view within the data warehouse. This process may require addressing data quality issues, resolving inconsistencies, and handling disparate data formats. Seamless integration ensures that users can access comprehensive and reliable information from across the organization.
+
+\subsection{Performance Optimization} Optimizing the performance of a data warehouse is crucial for delivering timely and efficient analytics. Techniques such as indexing, partitioning, and caching are used to improve query execution times and overall system performance. Performance tuning is an ongoing process as data volumes and user requirements evolve.
+
+\subsection{Data Security and Privacy} Data warehouses often contain sensitive and confidential information, making security and privacy a top priority. Implementing access controls, encryption, and data anonymization techniques helps protect data from unauthorized access and ensures compliance with relevant regulations and policies.
+
+\subsection{Scalability and Flexibility} Data warehouses need to accommodate growing data volumes and changing business needs. Scalable architectures, such as cloud-based solutions, provide flexibility to handle increasing data loads and support dynamic analytical requirements.
+
+\subsection{Data Governance} Data governance ensures that data quality, consistency, and compliance standards are maintained throughout the data warehouse lifecycle. Establishing clear data governance practices and policies helps organizations maintain data integrity and trustworthiness.
+
+\subsection{Emerging Trends} Data warehouse development continues to evolve with emerging technologies and trends. Integration with big data platforms, real-time data processing, and the application of artificial intelligence and machine learning techniques are expanding the capabilities of data warehouses.
+
+In summary, data warehouse development involves designing a robust architecture, implementing efficient ETL processes, integrating diverse data sources, optimizing performance, ensuring data security and privacy, and adhering to data governance principles. By addressing these key aspects, organizations can build reliable and scalable data warehousing solutions to support data-driven decision-making.
+
+
+
+    
+\bigskip
+
+
+In paper \cite{Al-RahmanWebETL2023} authors discuss the ETL process for the DW.
+
+\subsection{Natural Language to SQL Models}
+
+This section needs to be updated.
+
+In this section, work on translating a natural English query to a database into the corresponding SQL query statement is reviewed. Again, this concept is not new and various attempts have been made. A comprehensive review of these efforts could be found in \cite{Wong2021ASystems}. In the following, our quick review of this area is divided as follows: work on this topic, in general, is presented in the General Approach section. Methods using neural networks or a deep learning model are presented under the Machine Learning and Deep Learning Models subsection. Finally, recent work that has been completed using a pre-trained language model is presented in the last subsection.
+
+\subsubsection{Rule based Algorithms}
+
+This section needs to be updated.
+
+There are two distinct approaches in converting an NL query into a database query: rule-based algorithms and ML algorithms \cite{Wong2021ASystems}. Another paradigm of the machine learning approach is the use of pre-trained language models (PLM) to generate SQL queries from NL. 
+
+Rule-based algorithms have three main components: an NLP processor, a mapping table, and a mapping and generation engine \cite{Wong2021ASystems}.  The NLP processor is not unique to rule-based algorithms. It is responsible for tokenization, stop word removal, word replacement, and parsing which is also used in machine learning algorithms. 
+
+Tokenization, removing of stop words, stemming or lemmatization, and parsing was found to be helpful in making the matching process faster, reducing the ambiguity, and improving the matching accuracy \cite{Wong2021ASystems}. Rule-based algorithms have been applied to smaller datasets that yielded good results like the one done by Uma \cite{Uma2019FormationNLP}. 
+
+Although rule-based algorithms can be used for text-to-SQL tasks, rules-based algorithms are suitable for simple queries and databases\cite{Deng2022RecentExpect}. Developing rules for large, cross-domain datasets like Spider \cite{Yu2018Spider:Task}, may require a huge amount of effort in generating the rules.
+
+\subsubsection{Machine Learning Algorithms}
+
+This section needs to be updated.
+
+With the advancement of machine learning algorithms through the years, several works have been done using machine learning models to accomplish text-to-SQL generation tasks. Recurrent Neural Networks (RNN) and Graph Neural Networks (GNN) are the most common type of neural networks used in translating text to an SQL query. Commonly used RNN models include long short-term memory (LSTM),  gate recurrent neural network (GRU), sequence-to-sequence (seq2seq),  and the attention model \cite{Wong2021ASystems}.  
+
+F-SemtoSQL \cite{Li2020AModel} and IRNet \cite{Guo2019ContentGeneration} models used two bidirectional LSTM combined with the application of an attention mechanism to encode a question sentence. Authors in [16] also used two bidirectional GRUs with an attention mechanism in the prediction step of their model. Seq2SQLhaveite\cite{Zhong2017Seq2SQL:Learning} uses two-layer bidirectional LSTM while (\cite{Mellah2021SQLNetworks} used both LSTM and GRU for this task. \cite{Bogin2019RepresentingParsing, Chen2021ShadowGNN:Parser, Hui2022S2SQL:Parsers,Cai2021SADGA:Text-to-SQL,Wang2019RAT-SQL:Parsers} utilized GNNs in their models to represent schema as a graph structure.
+
+Neural language modeling typically use word embeddings as first layers \cite{Mellah2021SQLNetworks,Zhong2017Seq2SQL:Learning, Ferreira2020EvaluatingSystems,Vathsala2021NLP2SQLLearning,Xu2017SQLNet:Learning} using Word2Vec or GloVe \cite{Pennington2014GloVe:Representation}. This layer provides association and similarity of words prior to training \cite{Wong2021ASystems}. These methods improve the performance of downstream NLP tasks but lack the ability to represent the contextual meaning of words\cite{Wang2022Pre-TrainedApplications}.
+
+\subsubsection{The Use of Pre-trained Language Models}
+
+Pre-trained languages are large neural networks that are trained over a large text corpus and can be fine-tuned on a downstream NLP task \cite{Elazar2021MeasuringModels}. Some researchers have used the pre-trained language model BERT \cite{Devlin2018BERT:Understanding} as the first layer in their machine learning models \cite{Hwang2019AContextualization,Guo2019TowardsRepresentation,Zhang2019Editing-BasedQuestions,Li2020AModel,Ma2020MentionGeneration,Cai2021SADGA:Text-to-SQL,Cao2021LGESQL:Relations,Wang2019RAT-SQL:Parsers,Choi2020RYANSQL:Databases,Lin2020BridgingParsing} to leverage contextual information.
+
+The availability of large datasets such as Spider, WikiSQL, or SparC, has enabled researchers to finetune the model for text-to-SQL tasks. For example, Shaw et al \cite{Shaw2020CompositionalBoth} showed competitive results from fine-tuning the T5 model without relational structures. Authors of UnifiedSKG \cite{Xie2022UnifiedSKG:Models} achieved state-of-the-art results using T5 for various semantic parsing tasks including text-to-SQL.
+
+\subsection{Recent Work} 
+
+Typical models that tackle text-to-SQL tasks come under an encoder-decoder scheme. Some researchers have shown that input and output adjustment can improve the accuracy of the model\cite{Wong2021ASystems}. Several researchers have utilized different methods during encoding to improve schema linking and schema encoding. Encoding token types \cite{Guo2019ContentGeneration,Brunner2021ValueNet:Information} such as table, column, or value can be used to represent the linkage between the question and the schema. Graph-based methods are also widely used to represent the rich structural information of database schemas \cite{Deng2022RecentExpect}. S2SQL \cite{Hui2022S2SQL:Parsers} used a relational graph attention network to leverage syntactic information of questions. Cai et al proposed a unified encoding model SADGA \cite{Cai2021SADGA:Text-to-SQL} using graph structure to help in schema linking.  RAT-SQL \cite{Wang2019RAT-SQL:Parsers} utilized an attention model as well as a graph neural network to handle various pre-defined relations such as “both columns are from the same table” \cite{Deng2022RecentExpect}.
+
+For decoding, sketch-based slot-filling methods \cite{Hwang2019AContextualization,Xu2017SQLNet:Learning,Choi2020RYANSQL:Databases} have been employed to generate an SQL query by using different modules to predict the content for each corresponding slot from a sketch. On the other hand, generation-based methods \cite{Guo2019TowardsRepresentation,Wang2019RAT-SQL:Parsers,Cao2021LGESQL:Relations} used abstract syntax trees to decode the SQL query. 
+
+Using pre-trained models, PICARD \cite{Scholak2021PICARD:Models} attempted to constrain the auto-regressive decoder of language models through incremental parsing. This method can be operated directly on the output of a pre-trained language model such as T5. The authors claimed to have significantly improved performance on the Spider dataset. RASAT \cite{Qi2022RASAT:Text-to-SQL} also tried to improve performance of pre-trained language models in text-to-SQL tasks by incorporating relational structures such as schema linking and schema encoding while still inheriting the pre-trained parameters from the T5 model effectively.
+
+\subsubsection{Spider and Other Public Data Sets for Development}
+
+The availability of large datasets such as Spider, WikiSQL, or SparC, has enabled researchers to finetune the model for text-to-SQL tasks. For example, Shaw et al \cite{Shaw2020CompositionalBoth} showed competitive results from fine-tuning the T5 model without relational structures. Authors of UnifiedSKG \cite{Xie2022UnifiedSKG:Models} achieved state-of-the-art results using T5 for various semantic parsing tasks including text-to-SQL.
+
+\section{The Research Project}
+
+\subsection{Project Description}
+
+\subsection{Development of a Data Warehouse}
+
+Youry and Okanagan student should write this section
+
+\subsection{Development of a Language Model}
+
+
+
+\section{Data Warehouse Development} 
+
+
+
+\setlength{\fboxrule}{2pt}
+    	\fcolorbox{red}{white}{
+        	\parbox{0.8\linewidth}{
+       Youry and Nassi should write this section
+        	}
+        }
+\bigskip
+
+
+\section{NL to SQL Model for Harris SmartWorks} 
+
+The increasing volume of data collected nowadays has driven the interest in finding solutions that provide effective and simplified data retrieval  \cite{Wong2021ASystems}. Hence, recent advances in the use of deep learning for natural language processing have gained a lot of attention and its application to text-to-SQL tasks to be able to develop a system that interfaces between natural language and database systems such as OLTP and data warehouses (DW).
+
+This paper is focused on applying the capability of text-to-SQL models in retrieving information from the database systems of Harris SmartWorks, the leading provider of utility data software solutions. Individual clients' utility usage is automatically, precisely, and frequently measured by "smart meters", providing detailed and accurate data. The vast amount of data generated by smart metering infrastructure for utilities has immense potential to transform utility operations, which can result in enhanced safety and dependability, better service to the public, and reduced utility expenses for businesses, homeowners, and tenants.
+
+The use of a text-to-SQL solution aims to aid in easier information retrieval by taking non-technical, plain language questions like ‘Which location has the highest average annual electricity usage?’ and translating those questions into SQL queries against the data warehouse system.
+
+
+\subsection{T5 Model}
+In this paper, the approach we used for the text-to-SQL task is the use of pre-trained language models, specifically, the T5 model. The T5, or Text-to-Text Transfer Transformer, is a transformer-based model which aims to have a unified framework that converts all text-based language problems into a text-to-text format \cite{Raffel2019ExploringTransformer}. This means that every NLP task is cast as feeding the model with text as input, then training it to generate some text output. 
+
+Our experiments used the T5-base as the base model and fine-tuned by experimenting with parameters such as the number of epochs, batch size, learning rate, etc. using the free Kaggle online computing resource. 
+
+\subsection{Training and Testing Dataset}
+To finetune the T5 model for the text-to-SQL downstream task, the large-scale, cross-domain, text-to-SQL Spider \cite{Yu2018Spider:Task} dataset was used. The Spider dataset used in our experiments has a total of 8,659 training queries and 1,034 testing queries for 166 databases.
+
+In addition to the Spider dataset, we also used two sets of custom datasets from Harris SmartWorks’ database systems. The first one is from the OLTP database which has a total of 1,705 queries where 1,192 of the queries is for training while 513 queries is for testing. The second custom dataset is for the data warehouse which has a total of 597 queries where 440 of the queries is for training and 157 queries is for testing.  
+
+The development was completed on both Kaggle cloud computing environment using GPU P100 and on our own Ubuntu server with NVIDIA XXX.
+
+\subsection{SQL Correction}
+After translating the natural language query to SQL query using the fine-tuned T5 model, we implemented a simple post-processing method to correct the SQL query according with reference to the database schema. 
+
+This process scans the output SQL for the incorrect name of columns and tables and corrects them according to the database schema. For example, it will change “meter” in the SQL query to “meters” if the schema does not have a meter column or table. It is done using a sequential match, that is based on position, character by character. It replaces tokens with the correct table or column name based on the information from the database schema. If the match ratio is 1, this means an exact match and the token is already correct, hence the token will not be replaced.
+
+\subsection{Performance Metrics}
+For model evaluation, Zhong proposed two evaluation metrics from different perspectives: logical form accuracy and execution accuracy \cite{Zhong2017Seq2SQL:Learning}.
+
+\subsubsection{Logical Form Accuracy}
+Logical form accuracy is defined as the percentage of generated queries that are converted correctly from the actual query. It can be calculated using Equation \ref{eq:acc_lf}
+\begin{equation}
+    Acc_{lf} = \frac{N_{lf}}{N}
+   \label{eq:acc_lf}
+\end{equation}
+where $N$ is the total number of actual queries, and $N_{lf}$ is the number of queries that are converted correctly from the actual query.
+
+\subsubsection{Execution Accuracy}
+Execution accuracy stands for the percentage of generated queries that can be executed against the database and produce the correct results. It can be calculated using Equation \ref{eq:acc_ex}:
+\begin{equation}
+   % Acc_{ex} = \frac{N_{ex}}{N}
+\label{eq:acc_ex}
+\end{equation}
+where $N_{ex}$ is the number of generated queries that can be executed against the database and produce the correct results and $N$ the same as in equation \ref{eq:acc_lf}.
+
+Zhong mentioned that since two database queries can produce the same result. If only the logical form accuracy is utilized, some generated queries with a correctly executed result but not in the same syntax would be treated as incorrect queries. It is suggested that both of the metrics should be considered to evaluate the performance of models \cite{Zhong2017Seq2SQL:Learning}.
+
+\subsection{Results}
+Using the Spider dataset only, our model has an exact match accuracy of 66\% without SQL correction on the development test set. Applying the SQL correction method increased the accuracy to 68.3\%, an increase of about 2.3\%.
+
+Compared with other works that use the T5 model for text-to-SQL tasks, the performance of our model is not very far from the results of previous experiments. For instance, PICARD \cite{Scholak2021PICARD:Models} has an exact-set match accuracy of 65.8\% on T5-base and 75.5\% on the larger T5-3B model on Spider’s development test set. RASAT \cite{Qi2022RASAT:Text-to-SQL}, which employs a more sophisticated architecture with T5, has an exact-set match accuracy of 72.6\% on the development test set. Lastly, UnifiedSKG \cite{Xie2022UnifiedSKG:Models} showed 58.12\% match accuracy on their model trained based on the T5-base model.
+
+On the other hand, we also evaluated the model using two sets of test data from the custom Harris SmartWorks data. The first test dataset is unseen SQL queries while the second test dataset includes seen SQL queries from training. For the OTLP queries, the fine-tuned T5 model achieved a 72.9\% exact match accuracy on the unseen data and an 83.7\% exact match accuracy on the test data that it has seen during training. On the other hand, the accuracy is higher for the data warehouse queries with 85.4\% exact match accuracy on the unseen data and 87.5\% exact match accuracy on the seen data. The SQL correction process increased the exact match accuracy by about 5.7\% on average on the data warehouse queries.
+
+
+\section{NL to SQL Experiments on the Spider Data set} 
+\subsection{Data Sets}
+
+To fine-tune the T5 model for the text-to-SQL downstream task, the large-scale, cross-domain, text-to-SQL Spider \cite{Yu2018Spider:Task} dataset was used. The official final Spider training dataset has a total of 8,659 rows from 146 databases. For training, the columns used from the Spider data are \emph{query} and \emph{question} columns. We used the dev set as the testing dataset which has a total number of 1034 rows from 20 databases. 
+
+Unlike the Harris test data, the Spider test data are queries to databases that the model has not been exposed to. This means that the trained model does not know the full vocabulary of the table and column names in the testing data.
+
+\subsection{Using the T5 Model}
+Like the experiments done on Harris data, the T5 model was used as the backbone for the experiments with the Spider data. Furthermore, the same training code was used for these experiments where AdamW was used as the optimizer for the T5-base model. We set the learning rate to 3e-4, batch size to 8 and number of epochs to 8.  
+
+The experiments were done on both Kaggle cloud computing environment using GPU P100 and on our own Ubuntu server with NVIDIA XXX.
+
+
+\subsection{SQL Correction and Performance Metrics}
+After translating the natural language query to SQL query using the fine-tuned T5 model, we implemented the same SQL Correction routine with a database schema that represents the spider data set to complete the translating process. As well, the same metric is also used for gauging the performance of the model.
+
+\subsection{Results of the Expriements}
+Using the Spider dataset only, our model has a perfect match accuracy of 5.6\% without SQL correction on the development test set. Applying the SQL correction method increased the accuracy to 9.9\%, an increase of about 4.3\%.
+
+The results showed that our model performed poorly compared to the results of the previous experiments by other groups. For instance, PICARD \cite{Scholak2021PICARD:Models} has an exact-set match accuracy of 65.8\% on T5-base and 75.5\% on the larger T5-3B model on Spider’s development test set. RASAT \cite{Qi2022RASAT:Text-to-SQL}, which employs a more sophisticated architecture with T5, has an exact-set match accuracy of 72.6\% on the development test set. Lastly, UnifiedSKG \cite{Xie2022UnifiedSKG:Models} showed 58.12\% match accuracy on their model trained based on the T5-base model.
+
+If the testing dataset is included in the training set as a way to expose the model to the full vocabulary, the perfect match accuracy becomes 62.6\% before the SQL correction step and goes up to 87.9\% after the SQL correction.
+
+
+\section{ System Integration and Implementation }
+
+Integrating a chatbot, the NLP model, and the Data Warehouse
+
+\section{Conclusion}
+In this paper, we discussed recent advances in NLP and DW as an integrated solution for information retrieving from DW using human speech. 
+
+
+
+\section*{Acknowledgment}
+We acknowledge and thank Diomari Fortes (of Okanagan College) for his work in building a testing data warehouse and gathering research as a student and former member of our research team.
+
+
+\bibliographystyle{IEEEtran}
+\balance
+\bibliography{references,exportDW4AlgTr}
+
+%%%%
+\end{document}
